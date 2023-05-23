@@ -26,7 +26,16 @@ reservations.push(req.body)
 res.status(200).json(reservations)
 })
 
-
+app.put('/reservations/:idres', (req, res) => {
+const id = parseInt(req.params.idres)
+let reservation = reservations.find(reservation => reservation.idres === id)
+reservation.idveh = req.body.idveh,
+reservation.nom = req.body.nom,
+reservation.permis = req.body.permis,
+reservation.datereserve= req.body.datereserve,
+reservation.dateretour = req.body.dateretour,
+res.status(200).json(reservation)
+})
 
 app.delete('/vehicules/:id', (req, res) => {
 const id = parseInt(req.params.id)
