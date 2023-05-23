@@ -1,0 +1,28 @@
+[{
+  "id": 1,
+  "numimmat": "AA-123-BB",
+  "typeveh": "VP",
+  "lieustat": "Agen",
+  "motor": "T"
+},
+{
+  "id": 2,
+  "numimmat": "CC-456-DD",
+  "typeveh": "U",
+  "lieustat": "Gabarret",
+  "motor": "E"
+},
+{
+  "id": 3,
+  "numimmat": "EE-789-FF",
+  "typeveh": "C",
+  "lieustat": "Bayonne",
+  "motor": "H"
+},
+{
+  "id": 4,
+  "numimmat": "EE-789-FF",
+  "typeveh": "C",
+  "lieustat": "Bayonne",
+  "motor": "H"
+}]
