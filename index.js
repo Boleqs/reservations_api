@@ -37,6 +37,13 @@ reservation.dateretour = req.body.dateretour,
 res.status(200).json(reservation)
 })
 
+app.delete('/reservations/:idres', (req, res) => {
+const id = parseInt(req.params.idres)
+let reservation = reservations.find(reservation => reservation.idres === id)
+reservations.splice(reservations.indexOf(reservation), 1)
+res.status(200).json(reservations)
+})
+
 app.delete('/vehicules/:id', (req, res) => {
 const id = parseInt(req.params.id)
 let vehicule = vehicules.find(vehicule => vehicule.id === id)
